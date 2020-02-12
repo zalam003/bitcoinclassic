@@ -18,7 +18,7 @@ Follow instructions listed in
 
 Download the aarch64 version for RPi 
 
-   wget https://github.com/zalam003/energi/releases/download/v1.0.0/bitcoinclassic-1.0.0-daemon-aarch64.tar.gz
+   wget https://github.com/zalam003/bitcoinclassic/releases/download/v1.0.0/bitcoinclassic-1.0.0-daemon-aarch64.tar.gz
 
 
 ### Donations
