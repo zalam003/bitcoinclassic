@@ -1,0 +1,37 @@
+# Install apt packages
+
+Dependency Build Instructions
+Build requirements:
+
+`sudo apt-get install build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3`
+
+Now, you can either build from self-compiled depends or install the required dependencies:
+
+sudo apt-get install libssl1.0-dev libgmp-dev libevent-dev libboost-all-dev
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+
+
+# Download source
+
+https://bitcoinxc.org/bitcoinclassic-1.0.0-source.tar.gz
+
+# Add 2GB Swap
+
+sudo fallocate -l 2G /var/swapfile
+sudo chmod 600 /var/swapfile
+sudo mkswap /var/swapfile
+sudo swapon /var/swapfile
+sudo echo "/var/swapfile none swap sw 0 0" >> /etc/fstab
+
+
+# Compile code
+
+cd depends
+make HOST=aarch64-linux-gnu NO_QT=1
+cd ..
+./autogen.sh
+./configure --prefix=$PWD/depends/aarch64-linux-gnu --without-gui
+make
