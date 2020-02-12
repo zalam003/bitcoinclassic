@@ -12,17 +12,13 @@ The original documentation is in Energi's Github:
    https://github.com/22Developers/bxccore/blob/master/doc/build-unix.md
 
 ### To run compiled version
-Follow instructions listed in
-
-   https://www.energi.world/staking-on-vps/
-
 Download the aarch64 version for RPi 
 
    wget https://github.com/zalam003/bitcoinclassic/releases/download/v1.0.0/bitcoinclassic-1.0.0-daemon-aarch64.tar.gz
 
 
 ### Donations
-If the information helped you mine Energi, please feel free to send a donation my way!
+If the information helped you stake Bitcoin Classic, please feel free to send a donation my way!
 
 * BXC: XSowH2YpLe22KgFTkbHzMkwNMbYvk5jZjK
 * BTC: 3Hcp7MpzMKFEpvn5QsC2b1SsrLPDur7AMg
